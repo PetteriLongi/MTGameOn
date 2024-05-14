@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".SecondFragment">
+
+    <Button
+        android:id="@+id/Gain1Poison"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="96dp"
+        android:text="+1"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#398F3D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/PoisonDisplay"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/Lose1Poison"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="96dp"
+        android:text="-1"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#398F3D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/PoisonDisplay"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/ResetPoison"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:shadowColor="#000000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:text="@string/ResetPoison"
+        android:textColor="#8E1616"
+        android:textSize="16sp"
+        app:backgroundTint="#398F3D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/PoisonDisplay"
+        android:layout_width="162dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/textview_border_green"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#66BB6A"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/ResetPoison"
+        app:layout_constraintEnd_toStartOf="@+id/Gain1Poison"
+        app:layout_constraintStart_toEndOf="@+id/Lose1Poison"
+        tools:ignore="HardcodedText"/>
+
+    <TextView
+        android:id="@+id/StormDisplay"
+        android:layout_width="162dp"
+        android:layout_height="75dp"
+
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/textview_border_blue"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#448AFF"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/ResetStorm"
+        app:layout_constraintEnd_toStartOf="@+id/GainStorm"
+        app:layout_constraintStart_toEndOf="@+id/LoseStorm"
+        tools:ignore="HardcodedText"/>
+
+    <Button
+        android:id="@+id/LoseStorm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="112dp"
+        android:text="-1"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#3B53D6"
+        app:layout_constraintBottom_toTopOf="@+id/Lose1Poison"
+        app:layout_constraintEnd_toStartOf="@+id/StormDisplay"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText"/>
+
+    <Button
+        android:id="@+id/GainStorm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="112dp"
+        android:text="+1"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#3B53D6"
+        app:layout_constraintBottom_toTopOf="@+id/Gain1Poison"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/StormDisplay"
+        tools:ignore="HardcodedText"/>
+
+    <Button
+        android:id="@+id/ResetStorm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:shadowColor="#000000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1.6"
+        android:text="@string/ResetStorm"
+        android:textColor="#8E1616"
+        android:textSize="16sp"
+        app:backgroundTint="#3B53D6"
+        app:layout_constraintBottom_toTopOf="@+id/PoisonDisplay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/HealthDisplay"
+        android:layout_width="162dp"
+        android:layout_height="75dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/textview_border"
+        android:gravity="center"
+        android:text="40"
+        android:textColor="#8E1616"
+        android:textSize="60sp"
+        android:keepScreenOn="true"
+        app:layout_constraintBottom_toTopOf="@+id/ResetHealth"
+        app:layout_constraintEnd_toStartOf="@+id/Gain1Health"
+        app:layout_constraintStart_toEndOf="@+id/Lose1Health"
+        tools:ignore="HardcodedText"/>
+
+    <Button
+        android:id="@+id/Lose10Health"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="96dp"
+        android:text="-10"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#A12727"
+        app:layout_constraintBottom_toTopOf="@+id/LoseStorm"
+        app:layout_constraintEnd_toStartOf="@+id/ResetHealth"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText"/>
+
+    <Button
+        android:id="@+id/Lose1Health"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="-1"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#A12727"
+        app:layout_constraintBottom_toTopOf="@+id/Lose10Health"
+        app:layout_constraintEnd_toStartOf="@+id/HealthDisplay"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText" />
+
+    <Button
+        android:id="@+id/Gain1Health"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
+        android:text="+1"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#A12727"
+        app:layout_constraintBottom_toTopOf="@+id/Gain10Health"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/HealthDisplay"
+        tools:ignore="DuplicateSpeakableTextCheck,HardcodedText" />
+
+    <Button
+        android:id="@+id/Gain10Health"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="96dp"
+        android:text="+10"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#A12727"
+        app:layout_constraintBottom_toTopOf="@+id/GainStorm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ResetHealth"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/ResetHealth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:shadowColor="#000000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:text="@string/ResetHealth"
+        android:textColor="#A12727"
+        android:textSize="16sp"
+        app:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/StormDisplay"
+        app:layout_constraintEnd_toStartOf="@+id/Gain10Health"
+        app:layout_constraintStart_toEndOf="@+id/Lose10Health" />
+
+    <TextView
+        android:id="@+id/Commanderdmgp3"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_marginStart="32dp"
+
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/textview_border_green_small"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/Gain1Health"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Commanderdmgp2"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/Commanderdmgp2"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/textview_border_blue_small"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/Lose1Health"
+        app:layout_constraintEnd_toStartOf="@+id/Commanderdmgp3"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toEndOf="@+id/Commanderdmgp1"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/Commanderdmgp1"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/textview_border_red_small"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/Lose1Health"
+        app:layout_constraintEnd_toStartOf="@+id/Commanderdmgp2"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/addp2"
+        android:layout_width="51sp"
+        android:layout_height="51sp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
+        android:text="+1"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#3B53D6"
+        app:layout_constraintBottom_toTopOf="@+id/Commanderdmgp2"
+        app:layout_constraintEnd_toStartOf="@+id/addp3"
+        app:layout_constraintStart_toEndOf="@+id/addp1"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/subtractp2"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
+        android:text="-1"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#3B53D6"
+        app:layout_constraintBottom_toTopOf="@+id/Commanderdmgp2"
+        app:layout_constraintEnd_toStartOf="@+id/subtractp3"
+        app:layout_constraintStart_toEndOf="@+id/Subtractp1"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/addp3"
+        android:layout_width="51sp"
+        android:layout_height="51sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
+        android:text="+1"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#398F3D"
+        app:layout_constraintBottom_toTopOf="@+id/Commanderdmgp3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Commanderdmgp3"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/subtractp3"
+        android:layout_width="51sp"
+        android:layout_height="51sp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="-1"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#398F3D"
+        app:layout_constraintBottom_toTopOf="@+id/Commanderdmgp3"
+        app:layout_constraintEnd_toStartOf="@+id/Commanderdmgp3"
+        app:layout_constraintStart_toEndOf="@+id/addp2"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/addp1"
+        android:layout_width="51sp"
+        android:layout_height="51sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
+        android:text="+1"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#A12727"
+        app:layout_constraintBottom_toTopOf="@+id/Commanderdmgp1"
+        app:layout_constraintEnd_toStartOf="@+id/subtractp2"
+        app:layout_constraintStart_toEndOf="@+id/Commanderdmgp1"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/Subtractp1"
+        android:layout_width="51sp"
+        android:layout_height="51sp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="-1"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#A12727"
+        app:layout_constraintBottom_toTopOf="@+id/Commanderdmgp1"
+        app:layout_constraintEnd_toStartOf="@+id/Commanderdmgp1"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/BackButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ic_returnbutton_foreground"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
