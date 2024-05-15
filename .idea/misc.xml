@@ -13,9 +13,17 @@
         <entry key="..\:/Users/petel/AndroidStudioProjects/Mtgfamiliar/app/src/main/res/drawable/button_release.xml" value="0.476" />
         <entry key="..\:/Users/petel/AndroidStudioProjects/Mtgfamiliar/app/src/main/res/drawable/button_selector.xml" value="0.476" />
         <entry key="..\:/Users/petel/AndroidStudioProjects/Mtgfamiliar/app/src/main/res/drawable/buttonpress.xml" value="0.1805" />
+        <entry key="..\:/Users/petel/AndroidStudioProjects/Mtgfamiliar/app/src/main/res/drawable/framelayout_border.xml" value="0.307" />
         <entry key="..\:/Users/petel/AndroidStudioProjects/Mtgfamiliar/app/src/main/res/drawable/ic_BackButton_foreground.xml" value="0.5475" />
         <entry key="..\:/Users/petel/AndroidStudioProjects/Mtgfamiliar/app/src/main/res/drawable/ic_launcher_background.xml" value="0.18" />
         <entry key="..\:/Users/petel/AndroidStudioProjects/Mtgfamiliar/app/src/main/res/drawable/ic_returnbutton_foreground.xml" value="0.476" />
+        <entry key="..\:/Users/petel/AndroidStudioProjects/Mtgfamiliar/app/src/main/res/drawable/p1_health_border.xml" value="0.307" />
+        <entry key="..\:/Users/petel/AndroidStudioProjects/Mtgfamiliar/app/src/main/res/drawable/p2_frame_border.xml" value="0.307" />
+        <entry key="..\:/Users/petel/AndroidStudioProjects/Mtgfamiliar/app/src/main/res/drawable/p2_health_border.xml" value="0.307" />
+        <entry key="..\:/Users/petel/AndroidStudioProjects/Mtgfamiliar/app/src/main/res/drawable/p3_frame_border.xml" value="0.307" />
+        <entry key="..\:/Users/petel/AndroidStudioProjects/Mtgfamiliar/app/src/main/res/drawable/p3_health_border.xml" value="0.307" />
+        <entry key="..\:/Users/petel/AndroidStudioProjects/Mtgfamiliar/app/src/main/res/drawable/p4_frame_border.xml" value="0.307" />
+        <entry key="..\:/Users/petel/AndroidStudioProjects/Mtgfamiliar/app/src/main/res/drawable/p4_health_border.xml" value="0.307" />
         <entry key="..\:/Users/petel/AndroidStudioProjects/Mtgfamiliar/app/src/main/res/drawable/textview_border.xml" value="0.18" />
         <entry key="..\:/Users/petel/AndroidStudioProjects/Mtgfamiliar/app/src/main/res/drawable/textview_border_blue.xml" value="0.1805" />
         <entry key="..\:/Users/petel/AndroidStudioProjects/Mtgfamiliar/app/src/main/res/drawable/textview_border_blue_small.xml" value="0.1" />
@@ -27,16 +35,16 @@
         <entry key="..\:/Users/petel/AndroidStudioProjects/Mtgfamiliar/app/src/main/res/layout/content_main.xml" value="0.17135416666666667" />
         <entry key="..\:/Users/petel/AndroidStudioProjects/Mtgfamiliar/app/src/main/res/layout/fragment_first.xml" value="0.17135416666666667" />
         <entry key="..\:/Users/petel/AndroidStudioProjects/Mtgfamiliar/app/src/main/res/layout/fragment_second.xml" value="0.18" />
+        <entry key="..\:/Users/petel/AndroidStudioProjects/Mtgfamiliar/app/src/main/res/layout/fragment_third.xml" value="0.33" />
         <entry key="..\:/Users/petel/AndroidStudioProjects/Mtgfamiliar/app/src/main/res/menu/menu_main.xml" value="0.17135416666666667" />
         <entry key="..\:/Users/petel/AndroidStudioProjects/Mtgfamiliar/app/src/main/res/mipmap-anydpi-v26/ic_BackButton.xml" value="0.5475" />
         <entry key="..\:/Users/petel/AndroidStudioProjects/Mtgfamiliar/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.316" />
         <entry key="..\:/Users/petel/AndroidStudioProjects/Mtgfamiliar/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.316" />
         <entry key="..\:/Users/petel/AndroidStudioProjects/Mtgfamiliar/app/src/main/res/mipmap-anydpi-v26/ic_mtgfamiliar_launcher.xml" value="0.316" />
+        <entry key="..\:/Users/petel/AndroidStudioProjects/Mtgfamiliar/app/src/main/res/mipmap-anydpi-v26/ic_returnbutton.xml" value="0.344" />
+        <entry key="..\:/Users/petel/AndroidStudioProjects/Mtgfamiliar/app/src/main/res/mipmap-anydpi-v26/ic_returnbutton_round.xml" value="0.344" />
       </map>
     </option>
-  </component>
-  <component name="ProjectPlainTextFileTypeManager">
-    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/button_release.xml" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
